@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     background-color: white;
@@ -10,8 +14,6 @@ body {
     background-color: #1f2937;
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 0px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -19,12 +21,12 @@ body {
 .top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .logo {
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     border-radius: 45%;
     padding: 3px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -47,31 +49,30 @@ a {
 
 .bot {
     display: flex;
-    
-    padding-top: 80px;
-    padding-bottom: 80px; 
+    padding: 7em 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; 
 }
 
 .intro {
-    flex: 1;
-    
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
 }
 
 .bigtext {
     font-size: 48px;
     font-weight: bolder;
     color: white;
-    text-shadow: 2px 2px 4px rgba(147, 165, 179, 0.5);
-
 }
 
 .smalltext {
     font-size: 18px;
-    color: white;
+    color: #E5E7EB;
 }
 
-.button1 {
+button {
     padding: 7px 1em;
     width: 120px;
     background-color: #3882F6;
@@ -79,10 +80,13 @@ a {
 }
 
 .mixer {
-    width: 400px;
+    width: 50%;
     height: 220px;
     box-shadow: 14px 14px 16px rgba(0, 0, 0, 0.2);
     border: 3px rgba(124, 121, 121, 0.2);
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
