@@ -1,3 +1,6 @@
+
+/* It would be great to simplify some things for better reading.*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 * {
     padding: 0;
@@ -85,6 +88,7 @@ button {
     height: 220px;
     box-shadow: 14px 14px 16px rgba(0, 0, 0, 0.2);
     border: 3px rgba(124, 121, 121, 0.2);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,10 +113,18 @@ button {
 .squares {
     display: flex;
     justify-content:center;
-    align-items: center;
-    gap: 40px;
+    align-items: baseline;
+    gap: 80px;
     padding-bottom: 150px;
     padding-top: 50px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;  
+    width: 205px;
+    text-align: center;
+    gap: 34px;
 }
 
 .format {
@@ -121,6 +133,7 @@ button {
     border: 3px solid #73529e;
     border-radius: 10%;
     object-fit: cover;
+    box-shadow: 14px 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mid2 {
@@ -134,7 +147,6 @@ button {
     font-size: 36px;
     font-style: light italic #1f2937;
     font-weight: 100;
-    
 }
 
 em {
@@ -150,25 +162,29 @@ em {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px 210px;
+    margin: 98px 210px;
 }
 
 .call {
-    padding: 50px 160px;
+    width: 1000px;
+    padding: 50px 150px;
     background-color: #3882F6;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 100px;
     border: 2px solid #3882F6;
     border-radius: 11px;
 }
 
-.button2 {
-    border: solid white;
+h2 {
+    font-size: 24px;
 }
 
-.left {
-    
+.button2 {
+    width: 175px;
+    border: solid white;
+    padding: 8px 24px;
+    font-size: 20px;
 }
 
 .footer {
